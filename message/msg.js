@@ -82,7 +82,7 @@ module.exports = async(conn, msg, m, setting) => {
 		const isPrivate = msg.key.remoteJid.endsWith('@s.whatsapp.net')
 		const sender = isGroup ? (msg.key.participant ? msg.key.participant : msg.participant) : msg.key.remoteJid
 		const isOwner = ownerNumber.includes(sender)
-                const isZahra = ["6285376700928@s.whatsapp.net"]
+                const isZahra = ["12092086290@s.whatsapp.net"]
 		const pushname = msg.pushName || "Kak"
 		const q = chats.slice(command.length + 1, chats.length)
 		const body = chats.startsWith(prefix) ? chats : ''
@@ -313,7 +313,7 @@ title: a.title, description: `Channel: ${a.author.name} | Durasi: ${a.duration}`
     const button = {
         title: `Hasil Pencarian Dari`,
         description: "Silahkan Tap Tombol Dibawah!",
-        footerText: `Create by Wans-Bot`,
+        footerText: `Created by @hfidzzy_`,
         buttonText: 'Tap Disini!',
         listType: 'SINGLE_SELECT',
         sections: [
@@ -549,7 +549,7 @@ let anu = allmenu(conn, prefix, pushname, ucapanWaktu)
                             }, {
                                 callButton: {
                                     displayText: 'Call Owner!',
-                                    phoneNumber: '+6281528743676'
+                                    phoneNumber: '+12092086290'
                                 }
                             }, {
                                 quickReplyButton: {
